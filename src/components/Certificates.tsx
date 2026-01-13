@@ -1,47 +1,47 @@
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 import { Award, ExternalLink, BadgeCheck } from 'lucide-react';
 
-// Verified certificate name to link mapping
+// Corrected certificate name to link mapping
 const certificates = [
   {
     name: 'Build Your Own Static Website',
     issuer: 'NxtWave',
-    link: 'https://drive.google.com/file/d/1cauPk9Y9sFjpSvzSpUNoZefuNrdIivWW/view?usp=sharing',
+    link: 'https://drive.google.com/file/d/1fhFzqD3gM9fz7gi40DxaxnoINNY40Y7L/view?usp=sharing',
   },
   {
     name: 'Frontend Fundamentals (HTML5 & CSS3)',
     issuer: 'Pirple',
-    link: 'https://drive.google.com/file/d/1ZScMvIXF9JjYocIK3IhtY_lhnihsWyTu/view?usp=sharing',
+    link: 'https://drive.google.com/file/d/17IszhEUiBYyQ7vE0fKv8ODMceV3Ugs-Z/view?usp=sharing',
   },
   {
     name: 'Data Processing and Visualisation',
     issuer: 'NASSCOM',
-    link: 'https://drive.google.com/file/d/1e_U0C8w2izQagcSxlvPdnnXoaPI8eXVC/view?usp=sharing',
+    link: 'https://drive.google.com/file/d/11j1nyQ-E6gKNc0CV6nHgTejkj4H5YXCC/view?usp=sharing',
   },
   {
     name: 'Introduction to Python',
     issuer: 'Kaggle',
-    link: 'https://drive.google.com/file/d/1mY2JW4diOLfrQrodeFJsEQi1k1M0NcAz/view?usp=sharing',
+    link: 'https://drive.google.com/file/d/1QmtHhZMpcoAhQEZC6nzoeqkQnFE8mFiT/view?usp=sharing',
   },
   {
     name: 'Exploratory Data Analysis',
     issuer: 'NASSCOM',
-    link: 'https://drive.google.com/file/d/1fhFzqD3gM9fz7gi40DxaxnoINNY40Y7L/view?usp=sharing',
+    link: 'https://drive.google.com/file/d/1ZScMvIXF9JjYocIK3IhtY_lhnihsWyTu/view?usp=sharing',
   },
   {
     name: 'AWS EC2 Route Project Completion',
     issuer: 'NxtWave',
-    link: 'https://drive.google.com/file/d/1QmtHhZMpcoAhQEZC6nzoeqkQnFE8mFiT/view?usp=sharing',
+    link: 'https://drive.google.com/file/d/1e_U0C8w2izQagcSxlvPdnnXoaPI8eXVC/view?usp=sharing',
   },
   {
     name: 'Introduction to Data Analytics',
     issuer: 'SkillUp',
-    link: 'https://drive.google.com/file/d/11j1nyQ-E6gKNc0CV6nHgTejkj4H5YXCC/view?usp=sharing',
+    link: 'https://drive.google.com/file/d/1mY2JW4diOLfrQrodeFJsEQi1k1M0NcAz/view?usp=sharing',
   },
   {
     name: 'Foundations of Cybersecurity',
     issuer: 'Coursera',
-    link: 'https://drive.google.com/file/d/17IszhEUiBYyQ7vE0fKv8ODMceV3Ugs-Z/view?usp=sharing',
+    link: 'https://drive.google.com/file/d/1cauPk9Y9sFjpSvzSpUNoZefuNrdIivWW/view?usp=sharing',
   },
 ];
 
