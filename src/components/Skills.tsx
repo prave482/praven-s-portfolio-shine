@@ -78,7 +78,7 @@ const Skills = () => {
                   <button
                     key={skill}
                     onClick={() => handleSkillClick(skill)}
-                    className="skill-chip group flex items-center gap-2"
+                    className="px-4 py-2 rounded-full bg-card border border-border text-foreground text-sm font-medium cursor-pointer hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-300 group flex items-center gap-2"
                     title="Click to learn more"
                   >
                     {skill}
