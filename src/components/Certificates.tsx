@@ -1,6 +1,7 @@
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 import { Award, ExternalLink, BadgeCheck } from 'lucide-react';
 
+// Verified certificate name to link mapping
 const certificates = [
   {
     name: 'Build Your Own Static Website',
