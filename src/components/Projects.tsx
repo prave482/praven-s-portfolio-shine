@@ -4,81 +4,22 @@ import { ExternalLink, Github, Search } from 'lucide-react';
 
 const projects = [
   {
-    title: 'Data Analytics Dashboard',
-    description: 'Power BI dashboard with Excel integration and SQL social media queries for comprehensive data analysis.',
-    tech: ['Power BI', 'Excel', 'SQL'],
-    demo: '#',
-    source: '#',
+    title: 'She Cure App',
+    description: 'Healthcare application built with React for women\'s health and wellness management.',
+    tech: ['React', 'HTML', 'JavaScript', 'CSS'],
+    source: 'https://github.com/prave482/she-cure-app',
   },
   {
-    title: 'Ethical Hacking – Malicious Investigation',
-    description: 'Phishing investigation project using Kali Linux and Maltego for security analysis.',
-    tech: ['Kali Linux', 'Maltego', 'Security'],
-    demo: '#',
-    source: '#',
+    title: 'Fraud Detection System',
+    description: 'AI/ML-powered fraud detection system with React frontend for identifying suspicious activities.',
+    tech: ['AI/ML', 'React', 'Python'],
+    source: 'https://github.com/prave482/Fraud-app',
   },
   {
-    title: 'Random Password Generator',
-    description: 'Frontend application with Python Flask backend for generating secure random passwords.',
-    tech: ['Python', 'Flask', 'JavaScript'],
-    demo: '#',
-    source: '#',
-  },
-  {
-    title: 'AI Video using 10+ AI Tools',
-    description: 'Creative project utilizing multiple AI tools including ChatGPT and Microsoft Copilot.',
-    tech: ['ChatGPT', 'Microsoft Copilot', 'AI Tools'],
-    demo: '#',
-    source: '#',
-  },
-  {
-    title: 'Netflix Landing Page',
-    description: 'Responsive UI landing page clone inspired by Netflix design patterns.',
-    tech: ['HTML', 'CSS'],
-    demo: '#',
-    source: '#',
-  },
-  {
-    title: 'Learning Path Generator',
-    description: 'AI-powered recommendation tool for personalized learning paths.',
-    tech: ['Python', 'HTML', 'CSS', 'JavaScript'],
-    demo: '#',
-    source: '#',
-  },
-  {
-    title: 'UI/UX Wireframe – OLA Design',
-    description: 'Comprehensive UI/UX wireframe design for ride-sharing application.',
-    tech: ['Figma', 'UI/UX', 'Wireframing'],
-    demo: '#',
-    source: '#',
-  },
-  {
-    title: 'Overburden Feedback System',
-    description: 'Flutter application with AI summarization for feedback management.',
+    title: 'Hivemind - Overburden Feedback System',
+    description: 'Flutter application with AI summarization for collecting and analyzing feedback to reduce overburden.',
     tech: ['Flutter', 'Dart', 'AI'],
-    demo: '#',
-    source: '#',
-  },
-  {
-    title: 'Portfolio Website',
-    description: 'Personal portfolio website showcasing skills and projects.',
-    tech: ['HTML', 'CSS', 'JavaScript'],
-    demo: '#',
-    source: '#',
-  },
-  {
-    title: 'Restaurant Management System',
-    description: 'Web-based application to manage menu, orders, and billing.',
-    tech: ['Web Development', 'Database'],
-    demo: '#',
-    source: '#',
-  },
-  {
-    title: 'URL Shortener',
-    description: 'Flask-based backend service with redirect and storage capabilities.',
-    tech: ['Flask', 'Python', 'Database'],
-    demo: '#',
-    source: '#',
+    source: 'https://github.com/prave482/Hivemind',
   },
 ];
 
@@ -134,8 +75,7 @@ const Projects = () => {
                   {project.description}
                 </p>
 
-
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 mb-4">
                   {project.tech.map((tech) => (
                     <span
                       key={tech}
@@ -145,6 +85,16 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
+
+                <a
+                  href={project.source}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors text-sm font-medium"
+                >
+                  <Github className="w-4 h-4" />
+                  View on GitHub
+                </a>
               </div>
             </div>
           ))}

@@ -1,5 +1,5 @@
 import { useScrollReveal } from '@/hooks/useScrollReveal';
-import { Briefcase, Calendar, MapPin } from 'lucide-react';
+import { Briefcase, Calendar, MapPin, ExternalLink } from 'lucide-react';
 
 const experiences = [
   {
@@ -13,6 +13,7 @@ const experiences = [
       'Hands-on REST API design and debugging backend logic',
     ],
     tech: ['Python', 'Flask', 'Django', 'SQL', 'REST API'],
+    certificateLink: 'https://drive.google.com/file/d/1MfG7_qSG9FrVhbTkVIMU9L5tnSJQjubf/view?usp=sharing',
   },
   {
     title: 'Web Developer Intern',
@@ -23,6 +24,7 @@ const experiences = [
       'Developed Portfolio website using HTML, CSS, JavaScript',
     ],
     tech: ['HTML', 'CSS', 'JavaScript'],
+    certificateLink: 'https://drive.google.com/file/d/1d-ZnWVd8ajEMXQES5PgfM3p1tP-X8vjD/view?usp=sharing',
   },
   {
     title: 'Intern',
@@ -34,6 +36,7 @@ const experiences = [
       'Developed a project using Java – Calculator',
     ],
     tech: ['Java', 'Python', 'SQL', 'API Testing'],
+    certificateLink: 'https://drive.google.com/file/d/1KcFTJfStAZohkHEI8pwwsyxzbcNUyDJL/view?usp=drive_link',
   },
   {
     title: 'Intern – Ethical Hacking',
@@ -46,6 +49,7 @@ const experiences = [
       'Learned vulnerability analysis',
     ],
     tech: ['Ethical Hacking', 'Linux', 'Acunetix'],
+    certificateLink: 'https://drive.google.com/file/d/1KcFTJfStAZohkHEI8pwwsyxzbcNUyDJL/view?usp=sharing',
   },
 ];
 
@@ -114,7 +118,7 @@ const Experience = () => {
                     ))}
                   </ul>
 
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 mb-4">
                     {exp.tech.map((tech) => (
                       <span
                         key={tech}
@@ -124,6 +128,18 @@ const Experience = () => {
                       </span>
                     ))}
                   </div>
+
+                  {exp.certificateLink && (
+                    <a
+                      href={exp.certificateLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors text-sm font-medium"
+                    >
+                      <ExternalLink className="w-4 h-4" />
+                      View Certificate
+                    </a>
+                  )}
                 </div>
               </div>
             ))}
