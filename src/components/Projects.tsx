@@ -134,36 +134,16 @@ const Projects = () => {
                   {project.description}
                 </p>
 
-                <div className="flex flex-wrap gap-2 mb-6">
+
+                <div className="flex flex-wrap gap-2">
                   {project.tech.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium"
+                      className="px-3 py-1 rounded-full bg-secondary text-foreground text-xs font-medium"
                     >
                       {tech}
                     </span>
                   ))}
-                </div>
-
-                <div className="flex gap-3">
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-primary text-primary-foreground font-medium text-sm hover:opacity-90 transition-opacity"
-                  >
-                    <ExternalLink className="w-4 h-4" />
-                    {project.demo === '#' ? 'Coming Soon' : 'Live Demo'}
-                  </a>
-                  <a
-                    href={project.source}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl border border-border text-foreground font-medium text-sm hover:bg-secondary transition-colors"
-                  >
-                    <Github className="w-4 h-4" />
-                    {project.source === '#' ? 'Coming Soon' : 'Source'}
-                  </a>
                 </div>
               </div>
             </div>
