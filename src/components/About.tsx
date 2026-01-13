@@ -1,5 +1,5 @@
 import { useScrollReveal } from '@/hooks/useScrollReveal';
-import { Code, Lightbulb, Users, TrendingUp } from 'lucide-react';
+import { Code, Lightbulb, Users, TrendingUp, Mail } from 'lucide-react';
 
 const highlights = [
   { icon: Code, label: 'Clean Code', desc: 'Quality-focused development' },
@@ -7,6 +7,8 @@ const highlights = [
   { icon: Users, label: 'Team Player', desc: 'Effective collaboration' },
   { icon: TrendingUp, label: 'Fast Learner', desc: 'Adaptive & curious' },
 ];
+
+const EMAIL = 'praveenaveeranki@gmail.com';
 
 const About = () => {
   const { ref, isVisible } = useScrollReveal();
@@ -31,9 +33,16 @@ const About = () => {
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
               Passionate and driven software developer with a strong enthusiasm for coding and a deep commitment to delivering high-quality work. I continuously seek to enhance my skills and contribute effectively to team projects.
             </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-lg text-muted-foreground leading-relaxed mb-8">
               Dedicated to staying current with industry trends and best practices, I thrive in dynamic environments and am eager to tackle new challenges to drive success.
             </p>
+            <a
+              href={`mailto:${EMAIL}`}
+              className="inline-flex items-center gap-2 btn-primary"
+            >
+              <Mail className="w-5 h-5" />
+              Contact Me
+            </a>
           </div>
 
           {/* Highlights Grid */}
