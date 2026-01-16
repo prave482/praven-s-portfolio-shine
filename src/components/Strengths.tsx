@@ -43,7 +43,7 @@ const Strengths = () => {
     <section
       id="strengths"
       ref={ref as React.RefObject<HTMLDivElement>}
-      className="py-12 md:py-16 px-4 bg-secondary/30"
+      className="py-8 md:py-10 px-4 bg-secondary/30"
     >
       <div className="container mx-auto max-w-6xl">
         <div className={`text-center mb-10 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}>
