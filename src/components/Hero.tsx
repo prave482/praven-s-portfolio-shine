@@ -73,7 +73,9 @@ const Hero = () => {
             </a>
 
             <a
-              href="#"
+              href="/resume"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-outline flex items-center gap-2"
             >
               <Download className="w-4 h-4" />
