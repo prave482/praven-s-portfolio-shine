@@ -32,10 +32,10 @@ const Education = () => {
     <section
       id="education"
       ref={ref as React.RefObject<HTMLDivElement>}
-      className="py-20 md:py-28 px-4 bg-secondary/30"
+      className="py-12 md:py-16 px-4 bg-secondary/30"
     >
       <div className="container mx-auto max-w-6xl">
-        <div className={`text-center mb-16 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}>
+        <div className={`text-center mb-10 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}>
           <h2 className="section-title">Education</h2>
           <p className="section-subtitle">
             My academic background and qualifications

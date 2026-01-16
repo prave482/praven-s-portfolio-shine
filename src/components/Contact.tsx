@@ -8,10 +8,10 @@ const Contact = () => {
     <section
       id="contact"
       ref={ref as React.RefObject<HTMLDivElement>}
-      className="py-20 md:py-28 px-4"
+      className="py-12 md:py-16 px-4"
     >
       <div className="container mx-auto max-w-4xl">
-        <div className={`text-center mb-16 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}>
+        <div className={`text-center mb-10 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}>
           <h2 className="section-title">Get In Touch</h2>
           <p className="section-subtitle">
             Feel free to reach out for collaborations or just a friendly hello
