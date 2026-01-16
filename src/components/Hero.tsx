@@ -9,7 +9,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen hero-gradient flex items-center justify-center pt-16 pb-8 px-4">
+    <section className="hero-gradient flex items-center justify-center pt-20 pb-6 px-4 min-h-[70vh]">
       <div className="container mx-auto text-center">
         <div className="max-w-4xl mx-auto">
           {/* Badge */}
