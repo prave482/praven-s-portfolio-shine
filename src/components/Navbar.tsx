@@ -91,14 +91,33 @@ const Navbar = () => {
           <div className="flex items-center gap-2">
             <button
               onClick={toggleTheme}
-              className="p-2.5 rounded-xl bg-secondary hover:bg-secondary/80 transition-all duration-300"
+              className="relative p-2.5 rounded-xl bg-secondary hover:bg-secondary/80 transition-all duration-300 overflow-hidden group"
               aria-label="Toggle theme"
             >
-              {theme === 'light' ? (
-                <Moon className="w-5 h-5 text-foreground" />
-              ) : (
-                <Sun className="w-5 h-5 text-foreground" />
-              )}
+              <div className="relative w-5 h-5">
+                {/* Sun Icon */}
+                <Sun 
+                  className={`absolute inset-0 w-5 h-5 text-amber-500 transition-all duration-500 ${
+                    theme === 'dark' 
+                      ? 'rotate-0 scale-100 opacity-100' 
+                      : 'rotate-90 scale-0 opacity-0'
+                  }`} 
+                />
+                {/* Moon Icon */}
+                <Moon 
+                  className={`absolute inset-0 w-5 h-5 text-indigo-500 transition-all duration-500 ${
+                    theme === 'light' 
+                      ? 'rotate-0 scale-100 opacity-100' 
+                      : '-rotate-90 scale-0 opacity-0'
+                  }`} 
+                />
+              </div>
+              {/* Glow effect */}
+              <div className={`absolute inset-0 rounded-xl transition-all duration-500 ${
+                theme === 'dark' 
+                  ? 'bg-amber-500/10' 
+                  : 'bg-indigo-500/10'
+              } opacity-0 group-hover:opacity-100`} />
             </button>
 
             <button
