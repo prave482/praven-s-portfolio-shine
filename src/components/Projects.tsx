@@ -37,10 +37,10 @@ const Projects = () => {
     <section
       id="projects"
       ref={ref as React.RefObject<HTMLDivElement>}
-      className="py-20 md:py-28 px-4"
+      className="py-12 md:py-16 px-4"
     >
       <div className="container mx-auto max-w-6xl">
-        <div className={`text-center mb-16 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}>
+        <div className={`text-center mb-10 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}>
           <h2 className="section-title">Projects</h2>
           <p className="section-subtitle">
             A collection of my work and personal projects
@@ -48,7 +48,7 @@ const Projects = () => {
         </div>
 
         {/* Search Filter */}
-        <div className={`max-w-md mx-auto mb-12 ${isVisible ? 'animate-fade-up stagger-1' : 'opacity-0'}`}>
+        <div className={`max-w-md mx-auto mb-8 ${isVisible ? 'animate-fade-up stagger-1' : 'opacity-0'}`}>
           <div className="relative">
             <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
             <input

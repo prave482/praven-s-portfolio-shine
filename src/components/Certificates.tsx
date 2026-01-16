@@ -52,10 +52,10 @@ const Certificates = () => {
     <section
       id="certificates"
       ref={ref as React.RefObject<HTMLDivElement>}
-      className="py-20 md:py-28 px-4 bg-secondary/30"
+      className="py-12 md:py-16 px-4 bg-secondary/30"
     >
       <div className="container mx-auto max-w-6xl">
-        <div className={`text-center mb-16 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}>
+        <div className={`text-center mb-10 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}>
           <h2 className="section-title">Certificates</h2>
           <p className="section-subtitle">
             Professional certifications and achievements
@@ -63,7 +63,7 @@ const Certificates = () => {
         </div>
 
         {/* Certificate Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mb-8">
           {certificates.map((cert, index) => (
             <div
               key={cert.name}
